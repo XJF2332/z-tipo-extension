@@ -37,7 +37,7 @@ MODEL_NAME_LIST = [
 ] + [
     i[0] for i in models.tipo_model_list
 ] + [
-    "custom_nodes/z-tipo-extension | "+f for f in os.listdir("custom_nodes\z-tipo-extension\models") if f.endswith(".gguf")
+    "custom_nodes/z-tipo-extension | "+f for f in os.listdir("..models\kgen") if f.endswith(".gguf")
 ]
 print(MODEL_NAME_LIST)
 
