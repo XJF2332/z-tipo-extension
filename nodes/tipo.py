@@ -37,7 +37,7 @@ MODEL_NAME_LIST = [
 ] + [
     i[0] for i in models.tipo_model_list
 ] + [
-    "models/kgen | "+f for f in os.listdir("..models\kgen") if f.endswith(".gguf")
+    "models/kgen | "+f for f in os.listdir("models\kgen") if f.endswith(".gguf")
 ]
 print(MODEL_NAME_LIST)
 
