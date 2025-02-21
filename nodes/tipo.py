@@ -35,6 +35,8 @@ MODEL_NAME_LIST = [
     for model_name, ggufs in models.tipo_model_list
     for file in ggufs
 ] + [i[0] for i in models.tipo_model_list]
+for item in os.listdir("models"):
+    MODEL_NAME_LIST = MODEL_NAME_LIST.append(item)
 
 
 attn_syntax = (
