@@ -34,9 +34,11 @@ MODEL_NAME_LIST = [
     f"{model_name} | {file}".strip("_")
     for model_name, ggufs in models.tipo_model_list
     for file in ggufs
-] + [i[0] for i in models.tipo_model_list]
-for item in os.listdir("models"):
-    MODEL_NAME_LIST = MODEL_NAME_LIST.append(item)
+] + [
+    i[0] for i in models.tipo_model_list
+] + [
+    f for f in os.listdir("models") if f.endswith(".gguf")
+]
 
 
 attn_syntax = (
