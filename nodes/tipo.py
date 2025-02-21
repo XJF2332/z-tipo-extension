@@ -39,6 +39,7 @@ MODEL_NAME_LIST = [
 ] + [
     f for f in os.listdir("custom_nodes\z-tipo-extension\models") if f.endswith(".gguf")
 ]
+print(MODEL_NAME_LIST)
 
 
 attn_syntax = (
