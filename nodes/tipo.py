@@ -39,7 +39,6 @@ MODEL_NAME_LIST = [
 ] + [
     "models/kgen | "+f for f in os.listdir("models\kgen") if f.endswith(".gguf")
 ]
-print(MODEL_NAME_LIST)
 
 
 attn_syntax = (
